@@ -158,7 +158,7 @@ export class CdkstackStack extends Stack {
 
     // Lambda関数
     const fn = new aws_lambda.Function(this, 'fn', {
-      code: aws_lambda.Code.fromAsset(path.join(__dirname, '../src2/')),
+      code: aws_lambda.Code.fromAsset(path.join(__dirname, '../src/')),
       handler: 'index.handler',
       runtime: aws_lambda.Runtime.NODEJS_14_X,
       timeout: Duration.seconds(30),
